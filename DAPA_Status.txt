@@ -1,0 +1,107 @@
+-------------------------------------------------------------------------
+PLAN
+-------------------------------------------------------------------------
+Må
+- GUI [3.5]
+- Pålogging (Brukerkonto) [4]
+- Kan kjøre uten nevneverdige feil eller krasj [3.5]
+
+Bør
+- Tidsmerking av chat [4]
+- Logging [2.5]
+- Database (Brukerkonto, log) [4]
+- Chatrom (til mer 2 to brukere) [4]
+
+Kan
+- Privat chat [4]
+- Emojis [4]
+- Godt Design (Brukervennlig, funksjonelt, intuetivt.) [3.5]
+- Temaer / Forskjellige fargeoppsett [3.5]
+
+-------------------------------------------------------------------------
+
+-------------------------------------------------------------------------
+MARK - (For self- evaluation)
+-------------------------------------------------------------------------
+Not completed			[0]
+Core implemented		[1]
+Functionallity implemented	[2]
+Aesthetics implemented		[3]
+Fully implemented 		[4]
+
+
+-------------------------------------------------------------------------
+MARK - Explenation
+-------------------------------------------------------------------------
+[0] - Not started / No work done.
+[1] - Functionality works at a bare minimum. Major bugs/flaws expected.
+[2] - Functionality works as intended. Little to no bugs/flaws expected.
+[3] - Functionality works as intended. Aestethics complete
+[4] - Feature complete.
+-------------------------------------------------------------------------
+
+-------------------------------------------------------------------------
+Feature wishlist
+-------------------------------------------------------------------------
+
+	- Add coloured emoji's
+	- Add user tags. (Needs logs and ID verification)
+	- Add colouring based on tags Needs logs and ID verification
+	- Auto-color username.
+	- Auto-color username based on tag.
+	- Add additional selectable themes
+		- GUI
+		- Text
+		- ++User can self pick colour.
+	(Note: Imports system look and feel and thus natively supports
+	f.ex. all linux GTK environments.)
+	
+	- Command alias: display_username for username:
+	- Additional commands. [Format] '/[command] [target]'
+	- Add own screen for ChannelManager	
+	- Functionality that allows user to select / connect to different
+	  servers.
+	- Userlisting pr channel
+	- Notifications on join/leave channel.
+	- Guest users
+	- Encryption
+	- "Forgot passord" functionality
+
+
+-------------------------------------------------------------------------
+
+-------------------------------------------------------------------------
+Known flaws, bugs and errors.
+-------------------------------------------------------------------------
+[01]	- Client_Handler has a timeout when connecting to server
+	  this should be replaced with a listener that connects
+	  after the client has recieved a 'WELCOME' reply.
+	  
+[02]	- Taskbar icon scales poorly. Should be replaced with
+	  higher resolution image. SVG not supported.
+	  
+[03]	- Errously displays message that server can't be reached
+	  if user enters the wrong password.
+	  
+[04]	- Displays doesn't always autoscroll even though they should.
+
+[05]	- Should use singleton for logic.
+
+[06]	- Logic and cache should be re-sorted. Variables in cache. Functions in logic.
+
+[07]	- Logging needs better formatting and needs to be done pr channel.
+
+[08]	- Could probably sort getters/setters better. (ADD/REMOVE)
+
+[09]	- Doesn't send userlist on registration. Need to relog to see online users.
+
+[10]	- Gå til Channel Manager --> Leave --> Cancel, og den sender fortsatt meldingen til server
+	  (Fix: add check for 'answer != null' on channelManager)
+
+-------------------------------------------------------------------------
+
+
+
+
+
+  

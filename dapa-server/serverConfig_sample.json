@@ -1,0 +1,9 @@
+{
+  "Port": 1337,
+  "Host": "127.0.0.1",
+  "DBHost": "localhost",
+  "DBUser": "username",
+  "DBPort": 3306,
+  "DBPassword": "password",
+  "Database": "chat"
+}

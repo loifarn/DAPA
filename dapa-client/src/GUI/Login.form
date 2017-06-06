@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUI.Login">
+  <grid id="27dc6" binding="pwPanel" layout-manager="GridLayoutManager" row-count="5" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="10" left="10" bottom="10" right="10"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="500"/>
+    </constraints>
+    <properties>
+      <background color="-2697514"/>
+      <enabled value="false"/>
+      <font/>
+      <maximumSize width="225" height="155"/>
+      <minimumSize width="225" height="155"/>
+      <opaque value="false"/>
+      <preferredSize width="225" height="185"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="9b694" class="javax.swing.JTextField" binding="usernameField">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="User Name"/>
+        </properties>
+      </component>
+      <component id="fe1ee" class="javax.swing.JPasswordField" binding="passwordField">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="true"/>
+          <enabled value="true"/>
+          <text value="password"/>
+        </properties>
+      </component>
+      <component id="cfad" class="javax.swing.JLabel" binding="usernameLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <icon value="Resources/png32/users.png"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="79e6d" class="javax.swing.JLabel" binding="passwordLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <icon value="Resources/png32/lock.png"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="38455" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="28"/>
+          <text value="Login"/>
+        </properties>
+      </component>
+      <component id="b3616" class="javax.swing.JButton" binding="loginButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-13866548"/>
+          <hideActionText value="true"/>
+          <icon value="Resources/png16/login.png"/>
+          <inheritsPopupMenu value="true"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="77473" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Log in"/>
+        </properties>
+      </component>
+      <component id="d941a" class="javax.swing.JLabel" binding="registerLabel">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Register"/>
+        </properties>
+      </component>
+      <component id="9efda" class="javax.swing.JButton" binding="registerButton">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-13866548"/>
+          <hideActionText value="true"/>
+          <icon value="Resources/png16/add-1.png"/>
+          <inheritsPopupMenu value="true"/>
+          <text value=""/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

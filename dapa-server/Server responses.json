@@ -1,0 +1,127 @@
+##LOGIN
+{
+  "type": "LOGIN",
+  "username": "user",
+  "password": "testPassword"
+}
+
+
+##REGISTER
+{
+  "type": "REG",
+  "username": "devexer",
+  "password": "testPassword",
+  "display_name" : "Dev"
+}
+
+##Private message
+{
+	"type": "PRIVMSG",
+	"message": {
+		"content": "Some long message content goes here"
+
+	},
+	"channel": {
+		"name": "devexer"
+	},
+	"sender": {
+		"username": "13251613213"
+	}
+}
+##Channel message
+{
+	"type": "CHANMSG",
+	"message": {
+		"content": "Some long message content goes here"
+
+	},
+	"channel": {
+		"name": "name of recieving user"
+	},
+	"sender": {
+		"username": "username of sender"
+	}
+}
+##JOIN
+{
+  "type": "JOIN",
+  "message": "name of channel to join"
+}
+##PART
+{
+  "type": "PART",
+  "message": "name of channel to leave"
+}
+##Create a channel
+{
+  "type": "CREATE",
+  "name": "somechannel",
+  "display_name": "Some Channel"
+}
+## On first channel join
+{
+    "channel": "channel1",
+    "users": ["username", "username2"],
+    "type": "WHO",
+    "status": "USERS"
+}
+## User joins channel 
+{
+    "channel": "channel1",
+    "users": ["username"],
+    "type": "WHO",
+    "status": "JOIN"
+}
+## User leaves channel
+{
+    "channel": "channel1",
+    "users": ["username"],
+    "type": "WHO",
+    "status": "PART"
+}
+
+#Processing error
+	- Failed to handle message serverside: "Message type could not be handled by the server" - ERROR
+	- Registration successful: "Welcome to the server, you are now signed up as [username]" - WELCOME
+	- Registration failed: "Failed to register user, username might be taken" - ERROR
+	- Trying to register while logged in : "You are already authenticated on this server." - ERROR
+	- Trying to login in while logged in : "You are already authenticated on this server." - ERROR
+	- Loing successful: "Welcome to the server, you are signed in as  [username]" - WELCOME
+	- Login failed: "Invalid login credentials" - ERROR
+	- Trying to join a already joined channel : "Channel [channel id] is already joined" - ERROR
+	- Successfully joined a channel : "Joined channel [channel id]" - JOIN
+	- Trying to leave a channel you haven't joined "Channel [channel id] is not joined, can't leave channel" - ERROR
+	- Successfully left channel : "Left channel [channel id]" - PART
+	- Trying to send something else than LOGIN or REG while not logged in : "You must be authenticated to send messages" - ERROR
+	- Connection successful : "You are in a maze of twisty passages" - CONNECTED
+	- Authentication timeout : "No authentication provided within the given time frame" - CLOSE
+	- Trying to join a channel that doesn't exist : "Unable to join channel. Channel not found." - ERROR
+	- Trying to send messages to a channel you haven't joined : "You can not send a message to a channel you have not joined" - ERROR
+	
+{
+  "type": "Type",
+  "message": "Message"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
