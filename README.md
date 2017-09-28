@@ -71,5 +71,6 @@ We thank the following authors for allowing us to use their art & imagery for ou
 - [vectors-market from flaticon ](www.flaticon.com/authors/vectors-market)
 - [Essential Collectionfrom flaticon](http://www.flaticon.com/packs/essential-collection)
 
-
+And the following contributors
+- Joachim Dalen
 
